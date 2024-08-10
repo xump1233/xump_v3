@@ -1,10 +1,10 @@
 <script setup>
-
+import ClipImage from './components/ClipImage.vue';
 </script>
 
 <template>
   <div class="container">
-    
+    <ClipImage></ClipImage>
   </div>
   
   

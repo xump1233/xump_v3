@@ -49,7 +49,7 @@ watchEffect(()=>{
     <div class="container" ref="box">
         <slot></slot>
         <Teleport to="body">
-            <div class="context-menu" ref="menu">
+            <div class="context-menu" ref="menu" v-if="info.isVisible">
                 <div class="context-menu-item" v-for="item of list" @click="$attrs.onSelect($event.target.textContent)">{{ item.label }}</div>
             </div>
         </Teleport>
